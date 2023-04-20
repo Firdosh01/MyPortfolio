@@ -31,7 +31,7 @@ function NavBar() {
 
 
   return (
-    <div className="fixed flex items-center justify-between w-full h-20 px-4 text-white bg-black">
+    <div className="fixed flex items-center justify-between w-full h-20 px-4 text-white bg-black ">
       <div>
         <h1 className="ml-2 text-4xl font-signature">Firdosh</h1>
       </div>
