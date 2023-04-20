@@ -4,7 +4,7 @@ import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 
 function Home() {
   return (
-    <div name='home' className='w-full h-screen bg-gradient-to-b from-black to-gray-800'>
+    <div name='home' className='w-full h-screen bg-gradient-to-b from-black to-gray-800 via-black'>
 
       <div className='flex flex-col items-center justify-center h-full max-w-screen-lg px-4 mx-auto md:flex-row'>
         <div className='flex flex-col justify-center h-full '>
@@ -17,10 +17,10 @@ function Home() {
           </p>
 
           <div>
-            <button>
+            <button className='flex px-6 py-3 my-2 text-white rounded-md cursor-pointer w-fit item-center bg-gradient-to-r from-cyan-500 to-blue-500 group'>
               Portfolio
-              <span>
-                <MdOutlineKeyboardArrowRight />
+              <span className='duration-300 group-hover:rotate-90'>
+                <MdOutlineKeyboardArrowRight size={25} className='ml-1' />
               </span>
             </button>
           </div>
