@@ -17,7 +17,7 @@ function Home() {
           </p>
 
           <div>
-            <button className='flex px-6 py-3 my-2 text-white rounded-md cursor-pointer w-fit item-center bg-gradient-to-r from-cyan-500 to-blue-500 group'>
+            <button className='flex px-6 py-3 my-2 text-white rounded-md cursor-pointer w-fit item-center bg-gradient-to-r from-cyan-500 to-blue-500 group '>
               Portfolio
               <span className='duration-300 group-hover:rotate-90'>
                 <MdOutlineKeyboardArrowRight size={25} className='ml-1' />
@@ -27,7 +27,7 @@ function Home() {
         </div>
 
         <div>
-          <img src={alexander} alt="my profile" width={400} className='rounded-2xl' />
+          <img src={alexander} alt="my profile" width={400} className='rounded-2xl' loading='lazy' />
         </div>
         
       </div>
