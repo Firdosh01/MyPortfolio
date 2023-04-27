@@ -34,7 +34,7 @@ function Portfolio() {
   ]
   return (
 
-      < div name = "Portfolio" className = 'w-full text-white bg-gradient-to-b from-black to-gray-800' >
+      < div name="portfolio" className='w-full text-white bg-gradient-to-b from-black to-gray-800' >
         <div className='flex flex-col justify-center w-full h-full max-w-screen-lg p-4 mx-auto'>
 
           <div className='pb-8 mt-12'>
