@@ -60,7 +60,7 @@ function NavBar() {
 
           {
             links.map(({ link, id }) => (
-              <li key={link.id} className='px-4 py-6 text-4xl capitalize cursor-pointer'>
+              <li key={id} className='px-4 py-6 text-4xl capitalize cursor-pointer'>
                 
               <Link onClick={ () => setNav(!nav)} to={link} smooth duration={500}>{link}</Link>
               
