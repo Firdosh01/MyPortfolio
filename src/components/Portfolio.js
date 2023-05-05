@@ -35,16 +35,16 @@ function Portfolio() {
   return (
 
       < div name="portfolio" className='w-full text-white bg-gradient-to-b from-black to-gray-800' >
-        <div className='flex flex-col justify-center w-full h-full max-w-screen-lg p-4 mx-auto'>
+        <div className='flex flex-col justify-center w-full h-full max-w-screen-lg p-4 mx-auto' data-aos="fade-up-left">
 
-          <div className='pb-8 mt-12'>
+          <div className='pb-8 mt-12' >
 
             <p className='inline text-4xl font-bold border-b-4 border-gray-500 '>Portfolio</p>
             <p className='py-6'>Check out some of my work right here</p>
 
           </div>
 
-          <div className='grid gap-8 px-12 sm:grid-cols-2 md:grid-cols-3 sm:px-0'>
+          <div className='grid gap-8 px-12 sm:grid-cols-2 md:grid-cols-3 sm:px-0' data-aos="zoom-in">
             {
               portfolios.map( ({id, src}) => (
                 <div key={id} className='rounded-lg shadow-md shadow-gray-600'>

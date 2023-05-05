@@ -7,8 +7,19 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
+import { Rings } from 'react-loader-spinner';
+import { useState } from 'react';
 
 function App() {
+  // const [show, setShow] = useState(false);
+  // const [loading, setLoading] = useState(false);
+
+  // const helloHandeler = () => {
+  //   setTimeout(() => {
+  //     setLoading(true)
+  //   }, 2000)
+  // };
+
   return (
     <div>
       <NavBar />

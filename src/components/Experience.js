@@ -50,13 +50,13 @@ function Experience() {
     return (
         <div name="experience" className='w-full bg-gradient-to-b from-gray-800 to-black'>
 
-            <div className='flex flex-col justify-center w-full h-full max-w-screen-lg p-4 pt-12 mx-auto text-white'>
+            <div className='flex flex-col justify-center w-full h-full max-w-screen-lg p-4 pt-12 mx-auto text-white' data-aos="fade-up-left">
                 <div>
                     <p className='inline p-2 text-4xl font-bold border-b-4 border-gray-500'>Experience</p>
                     <p className='py-6'>These are the technologies I've worked with</p>
                 </div>
 
-                <div className='grid w-full grid-cols-2 gap-8 px-12 py-8 text-center sm:grid-cols-3 sm:px-0'>
+                <div className='grid w-full grid-cols-2 gap-8 px-12 py-8 text-center sm:grid-cols-3 sm:px-0' data-aos="zoom-in">
                     {
                         techs.map(({ id, src, title, style }) => (
                             <div key={id}>
