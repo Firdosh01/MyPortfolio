@@ -40,7 +40,7 @@ function SocialLinks() {
                     Resume <BsFillPersonLinesFill size={30} />
                 </>
             ),
-            href: ""
+            href: "mailto: mdfirdosha37@gmail.com",
         }
     ]
 

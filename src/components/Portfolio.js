@@ -35,7 +35,7 @@ function Portfolio() {
   return (
 
       < div name="portfolio" className='w-full text-white bg-gradient-to-b from-black to-gray-800' >
-        <div className='flex flex-col justify-center w-full h-full max-w-screen-lg p-4 mx-auto' data-aos="fade-up-left">
+        <div className='flex flex-col justify-center w-full h-full max-w-screen-lg p-4 mx-auto'>
 
           <div className='pb-8 mt-12' >
 
@@ -44,7 +44,7 @@ function Portfolio() {
 
           </div>
 
-          <div className='grid gap-8 px-12 sm:grid-cols-2 md:grid-cols-3 sm:px-0' data-aos="zoom-in">
+          <div className='grid gap-8 px-12 sm:grid-cols-2 md:grid-cols-3 sm:px-0' >
             {
               portfolios.map( ({id, src}) => (
                 <div key={id} className='rounded-lg shadow-md shadow-gray-600'>
