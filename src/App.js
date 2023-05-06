@@ -7,30 +7,45 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
-import { Rings } from 'react-loader-spinner';
-import { useState } from 'react';
+import {  ThreeDots } from 'react-loader-spinner';
+import { useEffect, useState } from 'react';
 
 function App() {
-  // const [show, setShow] = useState(false);
-  // const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
-  // const helloHandeler = () => {
-  //   setTimeout(() => {
-  //     setLoading(true)
-  //   }, 2000)
-  // };
+  const helloHandeler = () => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+  };
+  helloHandeler()
+
 
   return (
-    <div>
-      <NavBar />
-      <Home />
-      <About />
-      <Portfolio />
-      <Experience />
-      <Contact />
-      
-      <SocialLinks />
-    </div>
+    loading ?
+      <div className='wra'>
+        <ThreeDots
+          height="80"
+          width="80"
+          radius="9"
+          color="#4fa94d"
+          ariaLabel="three-dots-loading"
+          wrapperStyle={{}}
+          wrapperClassName=""
+          visible={true}
+        />
+      </div> :
+
+      <div>
+        <NavBar />
+        <Home />
+        <About />
+        <Portfolio />
+        <Experience />
+        <Contact />
+
+        <SocialLinks />
+      </div>
   );
 }
 

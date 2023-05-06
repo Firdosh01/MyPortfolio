@@ -28,7 +28,7 @@ function Home() {
         </div>
 
         <div>
-          <img src={alexander} alt="my profile" width={400} className='xsa:mt-3 rounded-2xl' loading='lazy' />
+          <img src={alexander} alt="my profile" width={400} className='xsa:mt-3 rounded-2xl' />
         </div>
         
       </div>
