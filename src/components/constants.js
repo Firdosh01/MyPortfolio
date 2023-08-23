@@ -11,6 +11,14 @@ import express from '../assets/Experience/Express.png'
 import postman from '../assets/Experience/postman.png'
 import vscode from '../assets/Experience/Vscode.png'
 
+// Portfolio project
+import Weather from '../assets/Weather.PNG'
+import TictactoeGame from '../assets/TictactoeGame.PNG'
+import DevDetective from '../assets/DevDetective.PNG'
+import ShoppingCart from '../assets/shopping.PNG'
+import StudyNotion from '../assets/study.PNG'
+
+
 // skills 
 export const frontend = [
   {
@@ -91,3 +99,41 @@ export const otherskill = [
 
 
 
+// portfolio project 
+export const portfolios = [
+    {
+      id: 1,
+      src: StudyNotion,
+      demo: "https://studynotion-project.netlify.app",
+      code: "https://github.com/Firdosh01/StudyNotion"
+    },
+    {
+      id: 2,
+      src: ShoppingCart,
+      demo: "https://firdosh-qkart-frontend.netlify.app",
+      code: "https://github.com/Firdosh01/Qkart"
+    },
+    {
+      id: 3,
+      src: Weather,
+      demo: "https://weather-app-ba8a.netlify.app",
+      code: "https://github.com/Firdosh01/WeatherApp"
+    },
+    {
+      id: 4,
+      src: DevDetective
+    },
+    {
+      id: 5,
+      src: TictactoeGame,
+      demo: "https://tic-tac-toe-gamedrago.netlify.app",
+      code: "https://github.com/Firdosh01/Tic-Tac-Toe-Game"
+    },
+    {
+      id: 6,
+      src: DevDetective,
+      demo: "https://github-finder-7df9e5.netlify.app",
+      code: "https://github.com/Firdosh01/Github-finder"
+    },
+
+  ]
