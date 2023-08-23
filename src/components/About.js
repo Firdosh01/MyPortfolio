@@ -6,17 +6,17 @@ function About() {
 
         <div className='flex flex-col justify-center w-full h-full max-w-screen-lg p-4 pt-12 mx-auto' >
             <div className='pb-8'>
-                <p className='inline text-4xl font-bold border-b-4 border-gray-500'>About</p>
+                <p className='inline p-2 text-4xl font-bold border-b-4 border-gray-500'>About</p>
             </div>
-            <p className='mt-12 text-xl'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis est illo, sapiente qui ipsum nobis? Aliquid veniam quos consequuntur ea corporis excepturi
-                 illum obcaecati omnis ducimus quaerat tenetur ipsam rem optio dolorum, amet accusantium repellendus rerum. Veniam numquam, ipsum est ipsam asperiores iure ipsa debitis laborum, cum dolor deleniti tenetur.</p>
+            <p className='mt-12 text-xl'>
+            Hello, my name is Md Firdosh, from Dhanbad. Currently in my 2th year of BCA studies at Indira Gandhi Open University, 
+            I proudly represent the dedication of a middle-class background. As a front-end developer,
+             i am proficient in creating responsive layouts, implementing design systems, and developing interactive website using React Js,
+            aspiring to become a MERN stack developer.
+            </p>
 
-            <br />
-
-            <p className='text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus recusandae eligendi fugit, expedita et magnam, tenetur optio quidem, necessitatibus excepturi doloremque at cumque modi 
-                incidunt officia impedit ipsa molestiae suscipit facere! Optio laborum deleniti libero culpa laudantium, quas natus voluptatem architecto nihil ab, ipsum amet omnis, molestias voluptas necessitatibus labore.</p>
         </div>
-      
+        
     </div>
   )
 }
