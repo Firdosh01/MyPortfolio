@@ -11,7 +11,8 @@
   }
 }
 
-.sharedSubTitle {
+/* black theme  */
+.whiteSharedSubTitle {
   border-left: 2px solid white;
   border-right: 2px solid white;
   margin: auto;
@@ -21,7 +22,7 @@
   z-index: 0;
 }
 
-.sharedSubTitle:before {
+.whiteSharedSubTitle:before {
   background-color: white;
   content: "";
   height: 2px;
@@ -31,11 +32,41 @@
   width: 46px;
 }
 
-.sharedSubTitle:after {
+.whiteSharedSubTitle:after {
   bottom: -1px;
   right: -1.7px;
   width: 46px;
   background-color: white;
+  content: "";
+  height: 2px;
+  position: absolute;
+}
+/* white theme  */
+.blackSharedSubTitle {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  margin: auto;
+  padding: 5px 10px 4px;
+  position: relative;
+  width: max-content;
+  z-index: 0;
+}
+
+.blackSharedSubTitle:before {
+  background-color: black;
+  content: "";
+  height: 2px;
+  position: absolute;
+  left: -1px;
+  top: 0;
+  width: 46px;
+}
+
+.blackSharedSubTitle:after {
+  bottom: -1px;
+  right: -1.7px;
+  width: 46px;
+  background-color: black;
   content: "";
   height: 2px;
   position: absolute;
@@ -99,11 +130,9 @@
 
 .shadow-dark {
   box-shadow: 0 0 8px -5px black;
-  transition: .3s linear;
 }
 .shadow-light{
   box-shadow: 0 0 8px -5px white;
-  transition: .3s linear;
 }
 
 .themeController {

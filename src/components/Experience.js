@@ -1,7 +1,7 @@
 import React from 'react'
 import { frontend, backend, otherskill} from './constants'
 
-function Experience() {
+function Experience({darkMode}) {
 
     return (
         <div name="experience" className='w-full text-black bg-white dark:bg-gradient-to-b dark:from-gray-800 dark:to-black'>
@@ -10,7 +10,7 @@ function Experience() {
                 <div>
                     <p className='inline p-2 text-4xl font-bold text-black border-b-4 border-gray-500 dark:text-white'>Experience</p>
                     <p className='py-6 text-black dark:text-white'>These are the technologies I've worked with</p>
-                    <p className='inline p-2 text-md sharedSubTitle'>Front-End</p>
+                    <p className={`inline p-2 text-md dark:text-white text-black ${darkMode ? "whiteSharedSubTitle" : "blackSharedSubTitle"}`}>Front-End</p>
                 </div>
 
                 <div className='grid w-full grid-cols-1 gap-8 px-12 py-8 text-center sm:grid-cols-3 sm:px-0'>
@@ -26,7 +26,7 @@ function Experience() {
                 </div>
 
                 <div>
-                    <p className='inline p-2 text-md sharedSubTitle'>Back-End</p>
+                    <p className={`inline p-2 text-md dark:text-white text-black ${darkMode ? "whiteSharedSubTitle" : "blackSharedSubTitle"}`}>Back-End</p>
                 </div>
 
                 <div className='grid w-full grid-cols-1 gap-8 px-12 py-8 text-center sm:grid-cols-3 sm:px-0'>
@@ -42,7 +42,7 @@ function Experience() {
                 </div>
 
                 <div>
-                    <p className='inline p-2 text-md sharedSubTitle'>Other-Softwares</p>
+                    <p className={`inline p-2 text-md dark:text-white text-black ${darkMode ? "whiteSharedSubTitle" : "blackSharedSubTitle"}`}>Other-Softwares</p>
                 </div>
 
                 <div className='grid w-full grid-cols-1 gap-8 px-12 py-5 text-center sm:grid-cols-3 sm:px-0'>

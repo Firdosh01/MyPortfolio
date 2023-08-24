@@ -18,7 +18,7 @@ function App() {
         <Home darkMode={darkMode} />
         <About />
         <Portfolio />
-        <Experience />
+        <Experience darkMode={darkMode}/>
         <Contact />
         <SocialLinks />
       </div>
