@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from 'react-scroll';
+import moon from '../assets/Experience/moon.png'
+import sun from '../assets/Experience/sun.png'
 
-function NavBar() {
+function NavBar({darkMode, setDarkMode}) {
 
   const [nav, setNav] = useState(false)
 
@@ -30,11 +32,22 @@ function NavBar() {
     },
   ];
 
-
   return (
-    <div className="fixed flex items-center justify-between w-full h-20 px-4 text-white bg-black ">
+    <div className={`fixed flex items-center justify-between w-full h-20 px-4 bg-white  dark:bg-black ${darkMode ? "shadow-light" : "shadow-dark"}`}>
+      <div 
+      className='hidden themeController md:block'
+      onClick={() => setDarkMode(!darkMode)}
+      >
+        
+       {
+         darkMode ? 
+            <img src={moon} alt="moon" className=' themeIcon dissappear'  /> 
+            :
+            <img src={sun} alt="sun" className=' themeIcon appear' />
+       }
+      </div>
       <div>
-        <h1 className="ml-2 text-4xl font-signature">Firdosh</h1>
+        <h1 className="ml-2 text-4xl text-black font-signature dark:text-white">Firdosh</h1>
       </div>
 
       <ul className='hidden md:flex'>
@@ -56,7 +69,7 @@ function NavBar() {
 
       {nav && (
 
-        <ul className='absolute top-0 left-0 flex flex-col items-center justify-center w-full h-screen text-gray-500 bg-gradient-to-b from-black to-gray-800'>
+        <ul className='absolute top-0 left-0 flex flex-col items-center justify-center w-full h-screen text-black bg-white dark:text-gray-500 dark:bg-gradient-to-b dark:from-black dark:to-gray-800'>
 
           {
             links.map(({ link, id }) => (
