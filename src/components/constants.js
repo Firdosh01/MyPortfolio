@@ -18,6 +18,10 @@ import DevDetective from '../assets/DevDetective.PNG'
 import ShoppingCart from '../assets/shopping.PNG'
 import StudyNotion from '../assets/study.PNG'
 
+// social icons
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
 
 // skills 
 export const frontend = [
@@ -137,3 +141,69 @@ export const portfolios = [
     },
 
   ]
+
+  // social links 
+ export const sociallinks = [
+    {
+        id: 1,
+        child: (
+            <>
+                LinkedIn <FaLinkedin size={30} />
+            </>
+        ),
+        href: "https://www.linkedin.com/in/firdosh01/",
+        style: 'rounded-tr-md'
+    },
+    {
+        id: 2,
+        child: (
+            <>
+                Github <FaGithub size={30} />
+            </>
+        ),
+        href: "https://github.com/Firdosh01",
+    }, 
+    {
+        id: 3,
+        child: (
+            <>
+                Mail <HiOutlineMail size={30} />
+            </>
+        ),
+        href: "mailto: mdfirdosha37@gmail.com",
+    }, 
+    {
+        id: 4,
+        child: (
+            <>
+                Resume <BsFillPersonLinesFill size={30} />
+            </>
+        ),
+        href: "mailto: mdfirdosha37@gmail.com",
+    }
+]
+
+// navigation 
+
+export const navigation = [
+  {
+    id: 1,
+    link: "home",
+  },
+  {
+    id: 2,
+    link: "about",
+  },
+  {
+    id: 3,
+    link: "portfolio",
+  },
+  {
+    id: 4,
+    link: "experience",
+  },
+  {
+    id: 5,
+    link: "contact",
+  },
+];
