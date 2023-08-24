@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from 'react-scroll';
 import moon from '../assets/Experience/moon.png'
 import sun from '../assets/Experience/sun.png'
+import { useEffect } from 'react';
 
 function NavBar({darkMode, setDarkMode}) {
 
@@ -32,11 +33,20 @@ function NavBar({darkMode, setDarkMode}) {
     },
   ];
 
+  const toggleTheme = () => {
+    setDarkMode(!darkMode)
+    localStorage.setItem('darkMode', !darkMode)
+  }
+
+  useEffect(() => {
+    setDarkMode(JSON.parse(localStorage.getItem('darkMode')))
+  }, [])
+
   return (
     <div className={`fixed flex items-center justify-between w-full h-20 px-4 bg-white  dark:bg-black ${darkMode ? "shadow-light" : "shadow-dark"}`}>
       <div 
       className='hidden themeController md:block'
-      onClick={() => setDarkMode(!darkMode)}
+      onClick={toggleTheme}
       >
         
        {
