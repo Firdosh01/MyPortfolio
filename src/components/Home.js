@@ -2,7 +2,10 @@ import React from 'react'
 import alexander from '../assets/alexander.jpg'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { Link } from 'react-scroll';
-// import Typical from 'react-typical'
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
+
+
 
 function Home({darkMode}) {
   return (
@@ -21,14 +24,48 @@ function Home({darkMode}) {
              MERN stack web developer, specializing mostly in Frontend design and development.
           </p>
 
+          <div className='flex'>
           <div>
-            <Link to='portfolio' smooth duration={500} className='flex px-6 py-3 my-2 text-white rounded-md cursor-pointer bg-[#DA5724] w-fit item-center dark:bg-gradient-to-r dark:from-cyan-500 dark:to-blue-500 group '>
+            <Link to='portfolio' smooth duration={500} className='flex px-6 py-3 my-2 text-white rounded-md cursor-pointer bg-[#DA5724] w-fit item-center dark:bg-gradient-to-r dark:from-cyan-500 dark:to-blue-500 group select-none'>
               Portfolio
               <span className='duration-300 group-hover:rotate-90'>
                 <MdOutlineKeyboardArrowRight size={25} className='ml-1' />
               </span>
             </Link>
           </div>
+          
+          <div className='flex items-center justify-center lg:hidden'>
+            <ul>
+              <li className='flex gap-2 ml-3'>
+                <a 
+                href="https://www.linkedin.com/in/firdosh01" 
+                className='text-[#DA5724] cursor-pointer select-none w-fit item-center dark:text-cyan-500'
+                target='_blank'
+                rel="noreferrer"
+                >
+                     <FaLinkedin size={30} />
+                </a>
+                <a 
+                href="https://github.com/Firdosh01" 
+                className='text-[#DA5724] cursor-pointer select-none w-fit item-center dark:text-cyan-500'
+                target='_blak'
+                rel="noreferrer"
+                >
+                     <FaGithub size={30} />
+                </a>
+                <a 
+                href="mailto: mdfirdosha37@gmail.com" 
+                className='text-[#DA5724] cursor-pointer select-none w-fit item-center dark:text-cyan-500'
+                target='_blank'
+                rel="noreferrer"
+                >
+                     <HiOutlineMail size={30} />
+                </a>
+              </li>
+            </ul>
+        </div>
+        
+        </div>
         </div>
 
         <div>
