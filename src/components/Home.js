@@ -1,5 +1,6 @@
 import React from 'react'
 import alexander from '../assets/alexander.jpg'
+import user from '../assets/user2.jpg'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { Link } from 'react-scroll';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
@@ -69,7 +70,7 @@ function Home({darkMode}) {
         </div>
 
         <div>
-          <img src={alexander} alt="my profile" width={320} className='xsa:mt-3 rounded-2xl' loading='lazy' />
+          <img src={user} alt="my profile" width={320} className='xsa:mt-3 rounded-2xl' loading='lazy' />
         </div>
         
       </div>
