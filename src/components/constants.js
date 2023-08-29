@@ -17,6 +17,8 @@ import TictactoeGame from '../assets/TictactoeGame.PNG'
 import DevDetective from '../assets/DevDetective.PNG'
 import ShoppingCart from '../assets/shopping.PNG'
 import StudyNotion from '../assets/study.PNG'
+import unsplash from '../assets/unsplash.PNG'
+
 
 // social icons
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
@@ -125,7 +127,9 @@ export const portfolios = [
     },
     {
       id: 4,
-      src: DevDetective
+      src: unsplash,
+      demo: "https://unsplash-image-search-firdosh.vercel.app",
+      code: "https://github.com/Firdosh01/unsplash-image-search"
     },
     {
       id: 5,
