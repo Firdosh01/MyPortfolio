@@ -183,7 +183,9 @@ export const portfolios = [
                 Resume <BsFillPersonLinesFill size={30} />
             </>
         ),
-        href: "mailto: mdfirdosha37@gmail.com",
+        href: "/Resume.pdf",
+        style: "rounded-br-md",
+        download: true,
     }
 ]
 
