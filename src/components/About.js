@@ -9,9 +9,9 @@ function About() {
                 <p className='inline p-2 text-4xl font-bold text-black border-b-4 border-gray-500 dark:text-white'>About</p>
             </div>
             <p className='mt-12 text-xl text-black dark:text-white'>
-            Hello <span>👋</span>, my name is Md Firdosh, from Dhanbad. Currently in my 2th year of BCA studies at Indira Gandhi Open University, 
+            Hello <span>👋</span>, my name is Md Firdosh, from Dhanbad. Currently in my 5th year of BCA studies at Indira Gandhi Open University, 
             I proudly represent the dedication of a middle-class background. As a front-end developer,
-             i am proficient in creating responsive layouts, implementing design systems, and developing interactive website using React Js,
+             i am proficient in creating responsive layouts, implementing design systems, and developing interactive website using Frontend technologies,
             aspiring to become a MERN stack developer.
             </p>
 

@@ -183,7 +183,7 @@ export const portfolios = [
                 Resume <BsFillPersonLinesFill size={30} />
             </>
         ),
-        href: "/Resume.pdf",
+        href: "/Md_Firdosh-Resume.pdf",
         style: "rounded-br-md",
         download: true,
     }
