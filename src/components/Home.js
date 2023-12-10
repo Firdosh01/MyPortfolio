@@ -70,7 +70,7 @@ function Home({darkMode}) {
         </div>
 
         <div>
-          <img src={My} alt="my profile" width={320}  className='xsa:mt-3 rounded-2xl h-[380px] select-none object-cover' loading='lazy' />
+          <img src={My} alt="my profile" width={320}  className='xsa:mt-3 rounded-2xl h-[365px] select-none object-cover' loading='lazy' />
         </div>
         
       </div>

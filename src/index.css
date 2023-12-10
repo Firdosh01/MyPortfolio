@@ -10,6 +10,12 @@
     font-family: 'Raleway', sans-serif;
   }
 }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
 /* black theme  */
 .whiteSharedSubTitle {
@@ -174,4 +180,15 @@
   -webkit-animation: dusk .5s ease-in-out;
   animation: dusk .5s ease-in-out;
   opacity: 1;
+}
+
+@keyframes dusk {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+}
+100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+}
 }
