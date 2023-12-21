@@ -3,9 +3,10 @@
 # dependencies
 /node_modules
 /.pnp
+.vscode
 .pnp.js
 .env
-
+README.md
 # testing
 /coverage
 

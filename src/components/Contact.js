@@ -45,7 +45,7 @@ function Contact() {
       className="w-full p-4 text-black bg-white dark:bg-gradient-to-b dark:from-black dark:to-gray-800"
     >
       <div className="flex flex-col justify-center h-full max-w-screen-lg p-4 mx-auto ">
-        <div className="pb-8">
+        <div className="pb-8 fade-in">
           <p className="inline p-2 text-4xl font-bold text-black border-b-4 border-gray-500 dark:text-white">
             Contact
           </p>
@@ -54,7 +54,7 @@ function Contact() {
           </p>
         </div>
 
-        <div className="flex items-center justify-center ">
+        <div className="flex items-center justify-center fade-in">
           <form
             onClick={handleOnSubmit}
             className="flex flex-col w-full md:w-1/2"

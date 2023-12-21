@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -7,10 +7,10 @@
 
 @layer base {
   html {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
   }
 }
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -79,16 +79,14 @@
 }
 
 .typewriter {
-  -webkit-animation: typing 3.5s steps(30), blink-caret .5s step-end infinite;
-  animation: typing 3.5s steps(30), blink-caret .5s step-end infinite;
+  -webkit-animation: typing 3.5s steps(30), blink-caret 0.5s step-end infinite;
+  animation: typing 3.5s steps(30), blink-caret 0.5s step-end infinite;
   border-right: 1.5px solid white;
   max-width: -webkit-max-content;
   max-width: max-content;
   overflow: hidden;
   white-space: nowrap;
 }
-
-
 
 @keyframes typing {
   from {
@@ -101,7 +99,6 @@
 }
 
 @keyframes blink-caret {
-
   from,
   to {
     border-color: transparent;
@@ -113,9 +110,10 @@
 }
 
 .typewrite {
-  -webkit-animation: typing 3.5s steps(30), blink-light-caret .5s step-end infinite;
-  animation: typing 3.5s steps(30), blink-light-caret .5s step-end infinite;
-  border-right: 1.5px solid #DA5724;
+  -webkit-animation: typing 3.5s steps(30),
+    blink-light-caret 0.5s step-end infinite;
+  animation: typing 3.5s steps(30), blink-light-caret 0.5s step-end infinite;
+  border-right: 1.5px solid #da5724;
   max-width: -webkit-max-content;
   max-width: max-content;
   overflow: hidden;
@@ -123,7 +121,6 @@
 }
 
 @keyframes blink-light-caret {
-
   from,
   to {
     border-color: transparent;
@@ -137,7 +134,7 @@
 .shadow-dark {
   box-shadow: 0 0 8px -5px black;
 }
-.shadow-light{
+.shadow-light {
   box-shadow: 0 0 8px -5px white;
 }
 
@@ -150,15 +147,14 @@
   z-index: 999;
 }
 
-
 .themeIcon {
   position: absolute;
   -webkit-transform: translate(0);
   transform: translate(0);
 }
 .appear {
-  -webkit-animation: dawn .5s ease-in-out;
-  animation: dawn .5s ease-in-out;
+  -webkit-animation: dawn 0.5s ease-in-out;
+  animation: dawn 0.5s ease-in-out;
   opacity: 1;
 }
 
@@ -167,18 +163,17 @@
     opacity: 0;
     -webkit-transform: translateY(100px);
     transform: translateY(100px);
-}
-100% {
+  }
+  100% {
     opacity: 1;
     -webkit-transform: translate(0);
     transform: translate(0);
+  }
 }
-}
-
 
 .dissappear {
-  -webkit-animation: dusk .5s ease-in-out;
-  animation: dusk .5s ease-in-out;
+  -webkit-animation: dusk 0.5s ease-in-out;
+  animation: dusk 0.5s ease-in-out;
   opacity: 1;
 }
 
@@ -186,9 +181,21 @@
   0% {
     opacity: 0;
     -webkit-transform: translateY(100px);
-}
-100% {
+  }
+  100% {
     opacity: 1;
     -webkit-transform: translate(0);
+  }
 }
+
+/* CSS for animated elements */
+.fade-in{
+  opacity: 0;
+  transform: translateY(70px);
+  transition: opacity 0.8s ease, transform 1s ease;
+}
+/* CSS to apply animation when element is in view */
+.fade-in.animate{
+  opacity: 1;
+  transform: translateY(0);
 }
