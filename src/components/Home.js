@@ -12,16 +12,16 @@ function Home({darkMode}) {
   return (
     <div name='home' className='w-full h-screen bg-white dark:bg-gradient-to-b dark:from-black dark:to-gray-800 dark:via-black'>
 
-      <div className='flex flex-col items-center justify-between h-full max-w-screen-lg px-4 pt-32 mx-auto md:flex-row '>
+      <div className='flex flex-col items-center justify-between h-full max-w-screen-lg px-4 pt-32 mx-auto md:flex-row fadeInUp'>
         <div className='flex flex-col justify-center h-full '>
           
           <h2 className='text-3xl font-bold text-black dark:text-white sm:text-4xl'>Hello, I am</h2>
           
-            <h2 className={`mt-1 text-4xl font-bold text-black dark:text-white sm:text-5xl ${darkMode ? "typewriter" : "typewrite"}`}>
+            <h3 className={`mt-1 text-4xl font-bold text-black dark:text-white sm:text-5xl ${darkMode ? "typewriter" : "typewrite"}`}>
               Firdosh Ansari
-            </h2>
+            </h3>
             
-          <p className='max-w-[35rem] py-2 text-gray-500'>
+          <p className='max-w-[35rem] py-2 text-gray-500 fadeInUp'>
              MERN stack web developer, specializing mostly in Frontend design and development.
           </p>
 
@@ -70,7 +70,7 @@ function Home({darkMode}) {
         </div>
 
         <div>
-          <img src={My} alt="my profile" width={320}  className='xsa:mt-3 rounded-2xl h-[365px] select-none object-cover' loading='lazy' />
+          <img src={My} alt="my profile" width={320}  className='xsa:mt-3 rounded-2xl h-[365px] select-none object-cover brightness-90' loading='lazy' />
         </div>
         
       </div>

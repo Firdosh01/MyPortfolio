@@ -199,3 +199,21 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+
+.fadeInUp {
+  transform: translateY(20px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: fadeInUp 0.5s 0.3s ease-in-out 1 forwards;
+}
+.fadeInUp p {
+  animation-delay: .6s;
+}
+@keyframes fadeInUp {
+  to {
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}

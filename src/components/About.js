@@ -17,7 +17,7 @@ function About() {
           in my 3th year of BCA studies at Indira Gandhi Open University, I
           proudly represent the dedication of a middle-class background. As a
           front-end developer, i have 1.5+ years hands on experience in creating
-          responsive layouts, implementing design systems, and developing
+          responsive layouts, implementing design, and developing
           interactive website using Frontend technologies, aspiring to become a
           MERN stack developer.
         </p>
