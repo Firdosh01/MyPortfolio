@@ -42,8 +42,8 @@ function App() {
       <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
       <Home darkMode={darkMode} />
       <About />
-      <Portfolio />
       <Experience darkMode={darkMode} />
+      <Portfolio />
       <Contact />
       <SocialLinks />
     </div>

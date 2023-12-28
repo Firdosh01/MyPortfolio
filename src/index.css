@@ -203,7 +203,7 @@
 
 .fadeInUp {
   transform: translateY(20px);
-  filter: blur(20px);
+  filter: blur(5px);
   opacity: 0;
   animation: fadeInUp 0.5s 0.3s ease-in-out 1 forwards;
 }
