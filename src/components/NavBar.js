@@ -20,9 +20,9 @@ function NavBar({darkMode, setDarkMode}) {
   }, [])
 
   return (
-    <div className={`fixed flex items-center justify-between w-full h-20 px-4 bg-white  dark:bg-black z-10 ${darkMode ? "shadow-light" : "shadow-dark"}`}>
+    <div className={`fixed flex items-center justify-between w-full h-20 md:px-4 px-1 bg-white  dark:bg-black z-10 ${darkMode ? "shadow-light" : "shadow-dark"}`}>
       <div 
-      className='hidden themeController md:block cursor-pointer'
+      className='hidden cursor-pointer themeController md:block'
       onClick={toggleTheme}
       >
         

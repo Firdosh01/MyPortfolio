@@ -42,7 +42,7 @@ function Contact() {
   return (
     <div
       name="contact"
-      className="w-full p-4 text-black bg-white dark:bg-gradient-to-b dark:from-black dark:to-gray-800"
+      className="w-full py-4 text-black bg-white dark:bg-gradient-to-b dark:from-black dark:to-gray-800"
     >
       <div className="flex flex-col justify-center h-full max-w-screen-lg p-4 mx-auto ">
         <div className="pb-8 fade-in">
@@ -54,7 +54,7 @@ function Contact() {
           </p>
         </div>
 
-        <div className="flex items-center justify-center fade-in">
+        <div className="flex items-center justify-center px-1 fade-in md:px-4">
           <form
             onClick={handleOnSubmit}
             className="flex flex-col w-full md:w-1/2"
@@ -92,6 +92,9 @@ function Contact() {
             </button>
           </form>
         </div>
+      </div>
+      <div className="flex items-start justify-center">
+        <span className="text-sm font-semibold text-black dark:text-white tracking-[4px]">Made with ❤️ by Firdosh</span>
       </div>
     </div>
   );
