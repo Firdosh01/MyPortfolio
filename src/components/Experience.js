@@ -8,7 +8,7 @@ function Experience({darkMode}) {
 
             <div className='flex flex-col justify-center w-full h-full max-w-screen-lg p-4 pt-12 mx-auto text-white'>
                 <div className='fade-in'>
-                    <p className='inline p-2 text-4xl font-bold text-black border-b-4 border-gray-500 dark:text-white'>Experience</p>
+                    <p className='inline p-2 text-4xl font-bold text-black border-b-4 border-gray-500 dark:text-white'>Skiils</p>
                     <p className='py-6 text-black dark:text-white'>These are the technologies I've worked with</p>
                     <p className={`inline p-2 text-md dark:text-white text-black ${darkMode ? "whiteSharedSubTitle" : "blackSharedSubTitle"}`}>Front-End</p>
                 </div>
