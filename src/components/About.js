@@ -4,7 +4,7 @@ function About() {
   return (
     <div
       name="about"
-      className="w-full text-black bg-white dark:bg-gradient-to-b dark:to-black dark:from-gray-800"
+      className="w-full text-black bgwhite bg-[#D5D5E0]  darkbg-gradient-to-b darkto-black darkfrom-gray-800 dark:bg-[#121226]"
     >
       <div className="flex flex-col justify-center w-full h-full max-w-screen-lg p-4 pt-12 mx-auto ">
         <div className="fade-in">

@@ -10,7 +10,7 @@ import { HiOutlineMail } from 'react-icons/hi';
 
 function Home({darkMode}) {
   return (
-    <div name='home' className='w-full h-screen bg-white dark:bg-gradient-to-b dark:from-black dark:to-gray-800 dark:via-black'>
+    <div name='home' className='w-full h-screen bgwhite bg-[#D5D5E0]  darkbg-gradient-to-b darkfrom-black darkto-gray-800 darkvia-black dark:bg-[#121226]'>
 
       <div className='flex flex-col items-center justify-between h-full max-w-screen-lg px-4 pt-32 mx-auto md:flex-row fadeInUp'>
         <div className='flex flex-col justify-center h-full '>

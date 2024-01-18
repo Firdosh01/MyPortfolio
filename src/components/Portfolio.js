@@ -5,7 +5,7 @@ function Portfolio() {
 
   return (
 
-      < div name="portfolio" className='w-full text-black bg-white dark:bg-gradient-to-b dark:from-black dark:to-gray-800' >
+      < div name="projects" className='w-full text-black bgwhite bg-[#D5D5E0] darkbg-gradient-to-b darkfrom-black darkto-gray-800 dark:bg-[#121226]' >
         <div className='flex flex-col justify-center w-full h-full max-w-screen-lg p-4 mx-auto '>
 
           <div className='pb-8 mt-12 fade-in' >
@@ -18,10 +18,10 @@ function Portfolio() {
           <div className='grid grid-cols-1 gap-8 px-0 md:px-4 md:grid-cols-2 lg:grid-cols-2'>
             {
               portfolios.map( ({id, name, src, demo, code, desc}) => (
-                <div key={id} className='p-2 duration-500 rounded-lg shadow-md cursor-pointer md:p-5 bg-slate-100 dark:bg-transparent dark:shadow-gray-600 hover:scale-105 fade-in'>
+                <div key={id} className='p-2 duration-500 rounded-lg shadow-md cursor-pointer md:p-5 bgslate-100 bg-[#d1d1dc]  dark:bg-transparent dark:shadow-gray-600 hover:scale-105 fade-in'>
                   <h2 className='text-base font-semibold text-black dark:text-white md:text-xl'>{name}</h2>
                   <div className='flex items-center justify-center py-3'>  
-                  <img src={src} alt="" className='md:h-[150px] h-[150px] sm:w-[300px] w-[250px] roundedmd  rounded-sm' loading='lazy' />
+                  <img src={src} alt="" className='md:h-[150px] h-[150px] sm:w-[300px] w-[250px] roundedmd  rounded-sm  select-none' loading='lazy' />
                   </div>
                   <div>
                     <p className='text-sm text-black dark:text-white md:text-base'>{desc}</p>
