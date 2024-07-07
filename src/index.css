@@ -17,10 +17,15 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --black-color: black;
+  --white-color: white;
+}
+
 /* black theme  */
 .whiteSharedSubTitle {
-  border-left: 2px solid white;
-  border-right: 2px solid white;
+  border-left: 2px solid var(--white-color);
+  border-right: 2px solid var(--white-color);
   margin: auto;
   padding: 5px 10px 4px;
   position: relative;
@@ -29,7 +34,7 @@
 }
 
 .whiteSharedSubTitle:before {
-  background-color: white;
+  background-color:var(--white-color);
   content: "";
   height: 2px;
   position: absolute;
@@ -42,12 +47,12 @@
   bottom: -1px;
   right: -1.7px;
   width: 46px;
-  background-color: white;
+  background-color:var(--white-color);
   content: "";
   height: 2px;
   position: absolute;
 }
-/* white theme  */
+/*var(--white-color) theme  */
 .blackSharedSubTitle {
   border-left: 2px solid black;
   border-right: 2px solid black;
@@ -81,11 +86,11 @@
 .typewriter {
   -webkit-animation: typing 3.5s steps(30), blink-caret 0.5s step-end infinite;
   animation: typing 3.5s steps(30), blink-caret 0.5s step-end infinite;
-  border-right: 1.5px solid white;
+  border-right: 1.5px solid var(--white-color);
   max-width: -webkit-max-content;
   max-width: max-content;
   overflow: hidden;
-  white-space: nowrap;
+ white-space: nowrap;
 }
 
 @keyframes typing {
@@ -105,7 +110,7 @@
   }
 
   50% {
-    border-color: white;
+    border-color:var(--white-color);
   }
 }
 
@@ -117,7 +122,7 @@
   max-width: -webkit-max-content;
   max-width: max-content;
   overflow: hidden;
-  white-space: nowrap;
+ white-space: nowrap;
 }
 
 @keyframes blink-light-caret {
@@ -135,7 +140,8 @@
   box-shadow: 0 0 8px -5px black;
 }
 .shadow-light {
-  box-shadow: 0 0 8px -5px white;
+  box-shadow: 0 0 8px -5px var(--white-color);
+  
 }
 
 .themeController {

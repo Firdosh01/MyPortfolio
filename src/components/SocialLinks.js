@@ -9,13 +9,9 @@ function SocialLinks() {
                 {
                     sociallinks.map(( {id, child, href, style, download}) => (
                         <li key={id} className={'flex justify-between w-40 px-4 bg-black  items-center h-14 ml-[-100px] dark:bg-gray-500 hover:rounded-md duration-300 hover:ml-[-10px]' + " " + style}>
-
                             <a href={href} rel="noreferrer" className='flex justify-between w-full text-[#DA5724] dark:text-white item-center' target='_blank' download={download}>
-                               
                                {child}
-
                             </a>
-
                         </li>
                     ))
                 }
