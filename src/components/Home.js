@@ -27,7 +27,7 @@ function Home({darkMode}) {
 
           <div className='flex'>
           <div>
-            <Link to='portfolio' smooth duration={500} className='flex px-6 py-3 my-2 text-white rounded-md cursor-pointer bg-[#DA5724] w-fit item-center dark:bg-gradient-to-r dark:from-cyan-500 dark:to-blue-500 group select-none'>
+            <Link to='about' smooth duration={500} className='flex px-6 py-3 my-2 text-white rounded-md cursor-pointer bg-[#DA5724] w-fit item-center dark:bg-gradient-to-r dark:from-cyan-500 dark:to-blue-500 group select-none'>
               Portfolio
               <span className='duration-300 group-hover:rotate-90'>
                 <MdOutlineKeyboardArrowRight size={25} className='ml-1' />
