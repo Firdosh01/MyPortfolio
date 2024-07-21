@@ -22,7 +22,7 @@ function Home({darkMode}) {
             </h3>
             
           <p className='max-w-[35rem] py-2 text-gray-500 fadeInUp'>
-             MERN stack web developer, specializing mostly in Frontend design and development.
+             Aspiring MERN stack developer, specializing mostly in Frontend design and development. 
           </p>
 
           <div className='flex'>

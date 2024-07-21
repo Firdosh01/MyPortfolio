@@ -1,5 +1,5 @@
 import React from "react";
-import { portfolios } from "./constants";
+import { projects } from "./constants";
 
 function Projects() {
   return (
@@ -18,10 +18,10 @@ function Projects() {
         </div>
 
         <div className="grid grid-cols-1 gap-8 px-0 md:px-4 md:grid-cols-2 lg:grid-cols-2">
-          {portfolios.map(({ id, name, src, demo, code, desc }) => (
+          {projects.map(({ id, name, src, demo, code, desc }) => (
             <div
               key={id}
-              className="p-2 duration-500 rounded-lg shadow-md cursor-pointer md:p-5 bgslate-100 dark:!bg-[#404040] !bg-[#115566] dark:shadow-gray-600 hover:scale-105 fade-in"
+              className="p-2 duration-500 rounded-lg  cursor-pointer md:p-5 bgslate-100 dark:!bg-[#404040] !bg-[#115566]  hover:scale-105 fade-in"
             >
               <h2 className="text-base font-semibold text-white dark:text-white md:text-xl">
                 {name}

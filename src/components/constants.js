@@ -1,47 +1,16 @@
-// Skils 
-import html from '../assets/Experience/html.png'
-import css from '../assets/Experience/css.png'
-import tailwind from '../assets/Experience/tailwind.png'
-import javascript from '../assets/Experience/javascript.png'
-import react from '../assets/Experience/react.png'
-import github from '../assets/Experience/GitHub_logo.png'
-import nodejs from '../assets/Experience/nodejs.png'
-import mongoDB from '../assets/Experience/MongoDB.svg'
-import express from '../assets/Experience/Express.png'
-import postman from '../assets/Experience/postman.png'
-import vscode from '../assets/Experience/Vscode.png'
-
-
 import {
-  AiFillFacebook,
-  AiOutlineTwitter,
-  AiOutlineGithub,
-  AiFillLinkedin,
-  AiFillYoutube,
   AiFillHtml5,
 } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
-import { BsMedium, BsBootstrapFill } from "react-icons/bs";
+import { BsBootstrapFill } from "react-icons/bs";
 import {
   SiTailwindcss,
-  SiMaterialui,
   SiRedux,
-  SiMongodb,
-  SiVisualstudiocode,
-  SiPostman,
-  SiFirebase,
-  SiHeroku,
-  SiVercel,
-  SiNetlify,
-  SiUdemy,
-  SiMicrosoft,
 } from "react-icons/si";
 import { TbBrandJavascript } from "react-icons/tb";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 
-
-// Portfolio project
-import Weather from '../assets/Weather.PNG'
+/* project */
 import TictactoeGame from '../assets/TictactoeGame.PNG'
 import DevDetective from '../assets/DevDetective.PNG'
 import ShoppingCart from '../assets/shopping.PNG'
@@ -49,15 +18,12 @@ import StudyNotion from '../assets/study.PNG'
 import unsplash from '../assets/unsplash.PNG'
 import decore from '../assets/decore.PNG'
 
-
-// social icons
+/* social icons */
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 
-// skills 
-
-
+/* skills  */
 export const skills = {
   frontend: [
     {
@@ -70,7 +36,7 @@ export const skills = {
       id: "CSS3",
       label: "CSS3",
       icon: <DiCss3  size={25} />,
-      width: 80,
+      width: 85,
     },
     {
       id: "Javascript",
@@ -124,99 +90,19 @@ export const skills = {
       id: "React Redux",
       label: "React Redux",
       icon: <SiRedux  size={25} />,
-      width: 75,
+      width: 30,
     },
     {
       id: "Redux Toolkit",
       label: "Redux Toolkit",
       icon: <SiRedux  size={25} />,
-      width: 60,
+      width: 35,
     },
   ],
 };
 
-
-export const frontend = [
-  {
-    id: 1,
-    src: html,
-    title: 'HTML',
-    style: 'shadow-orange-500'
-},
-{
-    id: 2,
-    src: css,
-    title: 'CSS',
-    style: 'shadow-blue-500'
-},
-{
-    id: 3,
-    src: javascript,
-    title: 'Javascript',
-    style: 'shadow-yellow-500'
-},
-{
-    id: 4,
-    src: tailwind,
-    title: 'Tailwind',
-    style: 'shadow-blue-600'
-},
-{
-    id: 5,
-    src: react,
-    title: 'React Js',
-    style: 'shadow-sky-400'
-},
-]
-
-export const backend = [
-    {
-        id: 1,
-        src: nodejs,
-        title: 'Node Js',
-        style: 'shadow-emerald-600'
-    },
-    {
-      id: 2,
-      src: express,
-      title: 'Express Js',
-      style: 'shadow-gray-400'
-    },
-    {
-        id: 3,
-        src: mongoDB,
-        title: 'MongoDb',
-        style: 'shadow-emerald-600'
-    },
-       
-]
-
-export const otherskill = [
-  {
-    id: 1,
-    src: github,
-    title: 'Github',
-    style: 'shadow-gray-400',
-   },
-   {
-    id: 2,
-    src: postman,
-    title: 'Postman',
-    style: 'shadow-orange-500',
-    width: 'w-[130px]'
-    },
-    {
-      id: 3,
-      src: vscode,
-      title: 'VS code',
-      style: 'shadow-sky-400',
-    },
-]
-
-
-
-// portfolio project 
-export const portfolios = [
+/*  project  */
+export const projects = [
     {
       id: 1,
       src: StudyNotion,
@@ -268,7 +154,7 @@ export const portfolios = [
   
   ]
 
-  // social links 
+  /* social links  */
  export const sociallinks = [
     {
         id: 1,
@@ -311,8 +197,7 @@ export const portfolios = [
     }
 ]
 
-// navigation 
-
+/* navigation  */
 export const navigation = [
   {
     id: 1,
@@ -324,11 +209,11 @@ export const navigation = [
   },
   {
     id: 3,
-    link: "projects",
+    link: "skills",
   },
   {
     id: 4,
-    link: "skills",
+    link: "projects",
   },
   {
     id: 5,
