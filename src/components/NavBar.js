@@ -20,7 +20,7 @@ function NavBar({darkMode, setDarkMode}) {
   }, [])
 
   return (
-    <div className={`fixed flex items-center justify-between w-full h-20 md:px-4 px-1 bgwhite bg-[#D5D5E0]   darkbg-black dark:bg-[#121226] z-10 ${darkMode ? "shadow-light" : "shadow-dark"}`}>
+    <div className={`fixed flex items-center justify-between w-full h-20 md:px-4 px-1 bgwhite  bg-white  dark:bg-[#121111] z-10 ${darkMode ? "shadow-light" : "shadow-dark"}`}>
       <div 
       className='hidden cursor-pointer themeController md:block'
       onClick={toggleTheme}
@@ -56,7 +56,7 @@ function NavBar({darkMode, setDarkMode}) {
 
       {nav && (
 
-        <ul className='absolute top-0 left-0 flex flex-col items-center justify-center w-full h-screen text-black bgwhite bg-[#D5D5E0] dark:text-gray-500 dark:bg-gradient-to-b dark:from-black dark:to-gray-800'>
+        <ul className='absolute top-0 left-0 flex flex-col items-center justify-center w-full h-screen dark:text-white text-black  bg-white  dark:bg-black'>
 
           {
             navigation.map(({ link, id }) => (

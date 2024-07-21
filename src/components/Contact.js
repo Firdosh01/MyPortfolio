@@ -42,7 +42,7 @@ function Contact() {
   return (
     <div
       name="contact"
-      className="w-full py-4 text-black bgwhite bg-[#D5D5E0]  darkbg-gradient-to-b darkfrom-black darkto-gray-800 dark:bg-[#121226]"
+      className="w-full py-4 text-black bg-white  dark:bg-[#1c1a1b]"
     >
       <div className="flex flex-col justify-center h-full max-w-screen-lg p-4 mx-auto ">
         <div className="pb-8 fade-in">

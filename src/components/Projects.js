@@ -5,7 +5,7 @@ function Projects() {
   return (
     <div
       name="projects"
-      className="w-full text-black bgwhite bg-[#D5D5E0] darkbg-gradient-to-b darkfrom-black darkto-gray-800 dark:bg-[#121226]"
+      className="w-full text-black bg-white  dark:bg-[#1c1a1b]"
     >
       <div className="flex flex-col justify-center w-full h-full max-w-screen-lg p-4 mx-auto ">
         <div className="pb-8 mt-12 fade-in">
@@ -21,9 +21,9 @@ function Projects() {
           {portfolios.map(({ id, name, src, demo, code, desc }) => (
             <div
               key={id}
-              className="p-2 duration-500 rounded-lg shadow-md cursor-pointer md:p-5 bgslate-100 bg-[#d1d1dc]  dark:bg-transparent dark:shadow-gray-600 hover:scale-105 fade-in"
+              className="p-2 duration-500 rounded-lg shadow-md cursor-pointer md:p-5 bgslate-100 dark:!bg-[#404040] !bg-[#115566] dark:shadow-gray-600 hover:scale-105 fade-in"
             >
-              <h2 className="text-base font-semibold text-black dark:text-white md:text-xl">
+              <h2 className="text-base font-semibold text-white dark:text-white md:text-xl">
                 {name}
               </h2>
               <div className="flex items-center justify-center py-3">
@@ -35,7 +35,7 @@ function Projects() {
                 />
               </div>
               <div>
-                <p className="text-sm text-black dark:text-white md:text-base">
+                <p className="text-sm text-white dark:text-white md:text-base">
                   {desc}
                 </p>
               </div>
@@ -43,7 +43,7 @@ function Projects() {
                 <a
                   href={demo}
                   rel="noreferrer"
-                  className="flex justify-between w-full text-black item-center dark:text-white"
+                  className="flex justify-between w-full text-white item-center dark:text-white"
                   target="_blank"
                 >
                   <button className="w-1/2 m-4 duration-200 hover:scale-105">
@@ -54,7 +54,7 @@ function Projects() {
                 <a
                   href={code}
                   rel="noreferrer"
-                  className="flex justify-between w-full text-black dark:text-white item-center"
+                  className="flex justify-between w-full text-white dark:text-white item-center"
                   target="_blank"
                 >
                   <button className="w-1/2 m-4 duration-200 hover:scale-105">

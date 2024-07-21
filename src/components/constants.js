@@ -11,6 +11,35 @@ import express from '../assets/Experience/Express.png'
 import postman from '../assets/Experience/postman.png'
 import vscode from '../assets/Experience/Vscode.png'
 
+
+import {
+  AiFillFacebook,
+  AiOutlineTwitter,
+  AiOutlineGithub,
+  AiFillLinkedin,
+  AiFillYoutube,
+  AiFillHtml5,
+} from "react-icons/ai";
+import { DiCss3 } from "react-icons/di";
+import { BsMedium, BsBootstrapFill } from "react-icons/bs";
+import {
+  SiTailwindcss,
+  SiMaterialui,
+  SiRedux,
+  SiMongodb,
+  SiVisualstudiocode,
+  SiPostman,
+  SiFirebase,
+  SiHeroku,
+  SiVercel,
+  SiNetlify,
+  SiUdemy,
+  SiMicrosoft,
+} from "react-icons/si";
+import { TbBrandJavascript } from "react-icons/tb";
+import { FaReact, FaNodeJs } from "react-icons/fa";
+
+
 // Portfolio project
 import Weather from '../assets/Weather.PNG'
 import TictactoeGame from '../assets/TictactoeGame.PNG'
@@ -27,6 +56,86 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 
 // skills 
+
+
+export const skills = {
+  frontend: [
+    {
+      id: "HTML5",
+      label: "HTML5",
+      icon: <AiFillHtml5  size={25} />,
+      width: 80,
+    },
+    {
+      id: "CSS3",
+      label: "CSS3",
+      icon: <DiCss3  size={25} />,
+      width: 80,
+    },
+    {
+      id: "Javascript",
+      label: "Javascript",
+      icon: <TbBrandJavascript  size={25} />,
+      width: 80,
+    },
+    {
+      id: "React Js",
+      label: "React Js",
+      icon: <FaReact size={25} />,
+      width: 90,
+    },
+  ],
+  backend: [
+    {
+      id: "Express Js",
+      label: "Express Js",
+      icon: <TbBrandJavascript  size={25} />,
+      width: 40,
+    },
+    {
+      id: "Node Js",
+      label: "Node Js",
+      icon: <FaNodeJs  size={25} />,
+      width: 40,
+    },
+    {
+      id: "Mongoose",
+      label: "Mongoose",
+      // icon: <Mongoose color="var(--theme)" size={45} />,
+      width: 40,
+    },
+  ],
+  frameworks: [
+    {
+      id: "Bootstrap",
+      label: "Bootstrap",
+      icon: <BsBootstrapFill  size={24} />,
+      width: 60,
+    },
+    {
+      id: "Tailwind CSS",
+      label: "Tailwind CSS",
+      icon: <SiTailwindcss  size={25} />,
+      width: 80,
+    },
+  ],
+  "state management": [
+    {
+      id: "React Redux",
+      label: "React Redux",
+      icon: <SiRedux  size={25} />,
+      width: 75,
+    },
+    {
+      id: "Redux Toolkit",
+      label: "Redux Toolkit",
+      icon: <SiRedux  size={25} />,
+      width: 60,
+    },
+  ],
+};
+
+
 export const frontend = [
   {
     id: 1,
