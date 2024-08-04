@@ -56,19 +56,19 @@ export const skills = {
       id: "Express Js",
       label: "Express Js",
       icon: <TbBrandJavascript  size={25} />,
-      width: 40,
+      width: 30,
     },
     {
       id: "Node Js",
       label: "Node Js",
       icon: <FaNodeJs  size={25} />,
-      width: 40,
+      width: 30,
     },
     {
       id: "Mongoose",
       label: "Mongoose",
       // icon: <Mongoose color="var(--theme)" size={45} />,
-      width: 40,
+      width: 30,
     },
   ],
   frameworks: [

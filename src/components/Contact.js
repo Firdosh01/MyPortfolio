@@ -27,7 +27,7 @@ function Contact() {
         body,
         config
       );
-      console.log("submit....")
+      console.log("submit....");
     } catch (error) {
       console.log("Error", error);
     }
@@ -57,17 +57,30 @@ function Contact() {
 
         <div className="flex justify-between md:flex-row flex-col px-1 fade-in md:px-4">
           <div>
-            <div className=" font-bold text-[45px]  text-black dark:text-white">Let's <span className="text-[#DA5724]   dark:text-cyan-500">work</span> <br />
+            <div className=" font-bold text-[45px]  text-black dark:text-white">
+              Let's{" "}
+              <span className="text-[#DA5724]   dark:text-cyan-500">work</span>{" "}
+              <br />
               together
             </div>
 
             <div className="flex flex-col md:mt-[50px] mt-[30px]">
-              <div className="text-black dark:text-white text-[18px] font-medium">Mail</div>
-              <div className=" text-black dark:text-gray-400 text-[15px]">mdfirdosha37@gmail.com</div>
+              <div className="text-black dark:text-white text-[18px] font-medium">
+                Mail
+              </div>
+              <div className=" text-black dark:text-gray-400 text-[15px]">
+                <a href="mailto:mdfirdosha37@gmail.com">
+                  mdfirdosha37@gmail.com
+                </a>
+              </div>
             </div>
             <div className="flex flex-col mt-[10px]">
-            <div className="text-black dark:text-white text-[18px] font-medium">Contact</div>
-              <div className=" text-black dark:text-gray-400 text-[15px]">+91 8102607915</div>
+              <div className="text-black dark:text-white text-[18px] font-medium">
+                Contact
+              </div>
+              <div className=" text-black dark:text-gray-400 text-[15px]">
+                <a href="tel:+918102607915">+91 8102607915</a>
+              </div>
             </div>
           </div>
           <form
@@ -107,7 +120,6 @@ function Contact() {
             </button>
           </form>
         </div>
-
       </div>
       {/* <div className="flex items-start justify-center">
         <span className="text-sm font-semibold text-black dark:text-white ">Made with ❤️ by Firdosh</span>
