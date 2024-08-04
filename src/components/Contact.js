@@ -27,6 +27,7 @@ function Contact() {
         body,
         config
       );
+      console.log("submit....")
     } catch (error) {
       console.log("Error", error);
     }
@@ -45,7 +46,7 @@ function Contact() {
       className="w-full py-4 text-black bg-white  dark:bg-[#1c1a1b]"
     >
       <div className="flex flex-col justify-center h-full max-w-screen-lg p-4 mx-auto ">
-        <div className="pb-8 fade-in">
+        <div className="pb-6 fade-in">
           <p className="inline p-2 text-4xl font-bold text-black border-b-4 border-gray-500 dark:text-white">
             Contact
           </p>
@@ -54,10 +55,24 @@ function Contact() {
           </p>
         </div>
 
-        <div className="flex items-center justify-center px-1 fade-in md:px-4">
+        <div className="flex justify-between md:flex-row flex-col px-1 fade-in md:px-4">
+          <div>
+            <div className=" font-bold text-[45px]  text-black dark:text-white">Let's <span className="text-[#DA5724]   dark:text-cyan-500">work</span> <br />
+              together
+            </div>
+
+            <div className="flex flex-col md:mt-[50px] mt-[30px]">
+              <div className="text-black dark:text-white text-[18px] font-medium">Mail</div>
+              <div className=" text-black dark:text-gray-400 text-[15px]">mdfirdosha37@gmail.com</div>
+            </div>
+            <div className="flex flex-col mt-[10px]">
+            <div className="text-black dark:text-white text-[18px] font-medium">Contact</div>
+              <div className=" text-black dark:text-gray-400 text-[15px]">+91 8102607915</div>
+            </div>
+          </div>
           <form
             onClick={handleOnSubmit}
-            className="flex flex-col w-full md:w-1/2"
+            className="flex flex-col w-full md:w-1/2 md:mt-0 mt-[30px]"
           >
             <input
               type="text"
@@ -86,16 +101,17 @@ function Contact() {
 
             <button
               type="submit"
-              className="flex items-center px-6 py-3 mx-auto my-8 text-white duration-300 bg-[#DA5724] rounded-md dark:bg-gradient-to-b dark:from-cyan-500 dark:to-blue-500 hover:scale-110"
+              className="flex w-full text-center justify-center items-center px-6 py-3 mx-auto my-8 text-white duration-300 bg-[#DA5724] rounded-md dark:bg-gradient-to-b dark:from-cyan-500 dark:to-blue-500 hover:bg-[#da5824d8]"
             >
               Let's talk
             </button>
           </form>
         </div>
+
       </div>
-      <div className="flex items-start justify-center">
+      {/* <div className="flex items-start justify-center">
         <span className="text-sm font-semibold text-black dark:text-white ">Made with ❤️ by Firdosh</span>
-      </div>
+      </div> */}
     </div>
   );
 }

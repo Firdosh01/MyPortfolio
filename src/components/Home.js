@@ -6,8 +6,6 @@ import { Link } from 'react-scroll';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 
-
-
 function Home({darkMode}) {
   return (
     <div name='home' className='w-full h-screen bgwhite bg-white  dark:bg-[#121111]'>
@@ -72,7 +70,6 @@ function Home({darkMode}) {
         <div>
           <img src={My} alt="my profile" width={320}  className='xsa:mt-3 rounded-2xl h-[365px] select-none object-cover brightness-90' loading='lazy' />
         </div>
-        
       </div>
 
     </div>
